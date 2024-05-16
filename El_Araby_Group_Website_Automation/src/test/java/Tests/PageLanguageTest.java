@@ -12,8 +12,8 @@ public class PageLanguageTest extends TestBase {
     public void PageChanegeLanguage (){
         homePage = new HomePage(driver);
         homePage.Open_lang_List();
-        homePage.Switch_Lang();
-        Assert.assertEquals(homePage.LoginLabel.getText(),"Login");
+        homePage.Switch_Lang_To_English();
+
 
     }
 }

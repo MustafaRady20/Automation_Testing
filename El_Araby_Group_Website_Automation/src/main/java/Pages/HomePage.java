@@ -27,9 +27,9 @@ public class HomePage extends PageBase{
 
     @FindBy(xpath = "//*[@id=\"switcher-language-trigger\"]") WebElement langBtn;
 
-    @FindBy(xpath = "//*[@id=\"switcher-language\"]/div/ul/li/a") WebElement SwitchToEnglishBtn;
+    @FindBy(xpath = "/html/body/div[3]/header/div[1]/div[1]/div/div/div/div[1]/div[1]/div/div/div/ul/li/a") WebElement SwitchToEnglishBtn;
 
-    public @FindBy(xpath = "/html/body/div[3]/header/div[1]/div[2]/div[1]/div[3]/div/ul/li[1]/ul/li[1]/a") WebElement LoginLabel;
+    public @FindBy(xpath = "//*[@id=\"html-body\"]/div[3]/header/div[1]/div[1]/div/div/div/div[2]/div/div/ul/li[1]/a") WebElement wishlist;
 
     public void Open_Product_Details(){
         productBtn.click();
@@ -55,7 +55,7 @@ public class HomePage extends PageBase{
         langBtn.click();
 
     }
-    public void Switch_Lang(){
+    public void Switch_Lang_To_English(){
         SwitchToEnglishBtn.click();
     }
 }

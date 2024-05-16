@@ -30,11 +30,11 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
-//    @AfterClass
-//    public void closeUrl()
-//    {
-//        driver.quit();
-//    }
+    @AfterClass
+    public void closeUrl()
+    {
+        driver.quit();
+    }
     @AfterMethod
     public void take_screenShot(ITestResult result) throws IOException {
         if(ITestResult.FAILURE == result.getStatus())
